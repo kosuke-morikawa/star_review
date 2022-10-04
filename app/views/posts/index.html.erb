@@ -22,6 +22,12 @@
               </div>
             </div>
             <footer class="card-footer">
+              <%= link_to post_reviews_path(post), class: "button card-footer-item" do %>
+                レビューを見る
+              <% end %>
+              <%= link_to post_path(post), class: "button card-footer-item" do %>
+                レビューを書く
+              <% end %>
             </footer>
           </div>
         <% end %>
