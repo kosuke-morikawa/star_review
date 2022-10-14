@@ -1,4 +1,5 @@
 class ReviewsController < ApplicationController
+  before_action :authenticate_user!, only: [:show]
   def index
     @post = Post.find(params[:post_id])
     @reviews = @post.reviews
