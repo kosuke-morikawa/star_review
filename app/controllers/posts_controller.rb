@@ -9,4 +9,3 @@ class PostsController < ApplicationController
     @review = Review.new
   end
 end
-
